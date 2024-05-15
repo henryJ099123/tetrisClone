@@ -1,0 +1,19 @@
+# Makefile general for compiling with X11
+CMP=gcc
+EXEC=projectExec
+MAIN=project
+FUNC=projectFunc
+
+$(EXEC): $(FUNC).o $(MAIN).o
+	$(CMP) $(FUNC).o $(MAIN).o gfx2_mac_arm.o -lX11 -I/opt/X11/include -L/opt/X11/lib -o $(EXEC)
+
+$(FUNC).o: $(FUNC).c $(FUNC).h
+	$(CMP) -c $(FUNC).c -I/opt/X11/include -o $(FUNC).o
+
+$(MAIN).o: $(MAIN).c $(FUNC).h
+	$(CMP) -c $(MAIN).c -I/opt/X11/include -o $(MAIN).o
+
+clean:
+	rm $(FUNC).o
+	rm $(MAIN).o
+	rm $(EXEC)
