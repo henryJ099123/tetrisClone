@@ -19,13 +19,14 @@ Controls:
 - esc: quit
 
 Notes:
-- DO NOT HOLD DOWN A BUTTON if using the student machines
-    - the student machines are too slow compared to a laptop
-- I spent a long time making this program more efficient.
-    - My personal laptop can run this thing perfectly fast.
-    - Unfortunately, the student machines are much slower at drawing filled-in squares.
-    - I made sure to only paste/remove squares when absolutely necessary,
-    - but the updates still take a second to load, unfortunately.
+~~- DO NOT HOLD DOWN A BUTTON if using the student machines (this applies to the school where I turned this in)~~
+~~- the student machines are too slow compared to a laptop~~
+~~- I spent a long time making this program more efficient.~~
+~~- My personal laptop can run this thing perfectly fast.~~
+~~- Unfortunately, the student machines are much slower at drawing filled-in squares.~~
+~~- I made sure to only paste/remove squares when absolutely necessary,~~
+~~- but the updates still take a second to load, unfortunately.~~
+- Rename the corresponding makefile for your computer to `Makefile` to run `make` command easier
 - If you want to download, and are using a mac,
     - in projectFunc.c, make sure to uncomment line 21 so the following runs:
     - return arc4random_uniform(7);
