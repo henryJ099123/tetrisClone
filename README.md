@@ -29,5 +29,7 @@ Notes:
 - Rename the corresponding makefile for your computer to `Makefile` to run `make` command easier
 - If you want to download, and are using a mac,
     - in projectFunc.c, make sure to uncomment line 21 so the following runs:
-    - return arc4random_uniform(7);
+      `return arc4random_uniform(7);`
+      (AKA remove `//` from the beginning of the line)
+    - however, if you are not using a mac, leave that line commented or make sure it is commented.
     - because for some reason rand() is broken on macs. I ran into this problem when coding this.
