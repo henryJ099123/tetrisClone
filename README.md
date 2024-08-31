@@ -19,14 +19,18 @@ Controls:
 - esc: quit
 
 Notes:
-~~- DO NOT HOLD DOWN A BUTTON if using the student machines (this applies to the school where I turned this in)~~
-~~- the student machines are too slow compared to a laptop~~
-~~- I spent a long time making this program more efficient.~~
-~~- My personal laptop can run this thing perfectly fast.~~
-~~- Unfortunately, the student machines are much slower at drawing filled-in squares.~~
-~~- I made sure to only paste/remove squares when absolutely necessary,~~
-~~- but the updates still take a second to load, unfortunately.~~
-- Rename the corresponding makefile for your computer to `Makefile` to run `make` command easier
+- This was developed and tested on an apple silicon Mac with an ARM based processor.
+    - This should work for other platforms but I apologize if it does not
+    - If you are on a mac, use the Terminal for the following instructions
+- How to get started (assuming a unix-based shell):
+    - Rename the corresponding makefile for your computer to `Makefile` to run `make` command easier
+        - aka if you have do not have a mac, rename `Makefile-general` to `Makefile`, or otherwise rename `Makefile-mac` to `Makefile`
+    - run `make clean` in shell
+    - if you have mac, see below
+    - run `make`
+    - this should generate an executable file called `ProjectExec`
+    - run `ProjectExec` by typing `./ProjectExec` into shell
+    - have fun!
 - If you want to download, and are using a mac,
     - in projectFunc.c, make sure to uncomment line 21 so the following runs:
       `return arc4random_uniform(7);`
